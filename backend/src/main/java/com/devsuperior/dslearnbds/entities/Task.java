@@ -17,20 +17,20 @@ public class Task extends Lesson{
 	private Double weight;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant dueDate;
+	private Instant duelDate;
 
 	public Task() {
 		super();
 	}
 
 	public Task(Long id, String title, Integer position, Section section, String description, Integer questionCount,
-			Integer approvalCount, Double weight, Instant dueDate) {
+			Integer approvalCount, Double weight, Instant duelDate) {
 		super(id, title, position, section);
 		this.description = description;
 		this.questionCount = questionCount;
 		this.approvalCount = approvalCount;
 		this.weight = weight;
-		this.dueDate = dueDate;
+		this.duelDate = duelDate;
 	}
 
 	public String getDescription() {
@@ -66,10 +66,10 @@ public class Task extends Lesson{
 	}
 
 	public Instant getDueDate() {
-		return dueDate;
+		return duelDate;
 	}
 
-	public void setDueDate(Instant dueDate) {
-		this.dueDate = dueDate;
+	public void setDueDate(Instant duelDate) {
+		this.duelDate = duelDate;
 	}
 }
