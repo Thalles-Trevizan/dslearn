@@ -12,7 +12,7 @@ import com.devsuperior.dslearnbds.dto.NotificationDTO;
 import com.devsuperior.dslearnbds.services.NotificationService;
 
 @RestController
-@RequestMapping(value = "/notification")
+@RequestMapping(value = "/notifications")
 public class NotificationController {
 
 	@Autowired
